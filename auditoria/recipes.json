@@ -1,0 +1,183 @@
+{
+  "Desayunos": [
+    {
+      "nombre": "Huevos revueltos con espinaca y queso",
+      "ingredientes": [
+        "3 huevos",
+        "1 taza de espinaca picada",
+        "1/4 taza de queso rallado",
+        "sal y pimienta al gusto",
+        "1 cda de mantequilla"
+      ],
+      "preparacion": "Derrite la mantequilla en una sartén, sofríe la espinaca. Bate los huevos con sal y pimienta. Añádelos a la sartén, revuelve, agrega el queso y cocina 3-4 minutos.",
+      "videoId": "PUP7U5vTMM0"
+    },
+    {
+      "nombre": "Panqueques de avena y banana",
+      "ingredientes": ["1 banana madura", "1 huevo", "1/2 taza de avena", "1/4 taza de leche"],
+      "preparacion": "Licúa todo hasta obtener una mezcla suave. Cocina porciones en una sartén antiadherente. Sirve con miel o frutas.",
+      "videoId": "dQw4w9WgXcQ"
+    },
+    {
+      "nombre": "Tostadas francesas",
+      "ingredientes": ["2 huevos", "1/4 taza de leche", "4 rebanadas de pan", "canela al gusto", "mantequilla"],
+      "preparacion": "Bate los huevos con leche y canela. Remoja el pan en la mezcla y fríe en mantequilla hasta dorar. Sirve con miel o azúcar glass.",
+      "videoId": "6JVQbOoiuVs"
+    },
+    {
+      "nombre": "Arepas rellenas de queso",
+      "ingredientes": ["1 taza de harina de maíz precocida", "1 taza de agua", "sal al gusto", "queso blanco rallado"],
+      "preparacion": "Mezcla la harina con agua y sal. Forma arepas, cocínalas en sartén y rellena con queso.",
+      "videoId": "kJQP7kiw5Fk"
+    },
+    {
+      "nombre": "Batido energizante",
+      "ingredientes": ["1 banana", "1/2 taza de avena", "1 cda de miel", "1 taza de leche", "1/2 manzana"],
+      "preparacion": "Licúa todos los ingredientes y sirve frío.",
+      "videoId": "astISOttCQ0"
+    }
+  ],
+  "Almuerzos": [
+    {
+      "nombre": "Arroz con pollo",
+      "ingredientes": [
+        "2 tazas de arroz",
+        "1 pechuga de pollo cocida y desmenuzada",
+        "1/2 taza de zanahoria picada",
+        "1/2 taza de arvejas",
+        "cebolla",
+        "ajo",
+        "sal y condimentos"
+      ],
+      "preparacion": "Sofríe cebolla y ajo, añade arroz y vegetales. Agrega agua y cocina hasta que el arroz esté listo. Mezcla con el pollo.",
+      "videoId": "FTQbiNvZqaY"
+    },
+    {
+      "nombre": "Spaghetti a la boloñesa",
+      "ingredientes": [
+        "250g de pasta",
+        "200g de carne molida",
+        "1 taza de salsa de tomate",
+        "cebolla",
+        "ajo",
+        "orégano"
+      ],
+      "preparacion": "Cocina la pasta. Sofríe la carne con cebolla y ajo. Agrega salsa y orégano. Sirve sobre la pasta.",
+      "videoId": "V-a9VDIbZCU"
+    },
+    {
+      "nombre": "Filete de pescado al ajillo",
+      "ingredientes": ["2 filetes de pescado", "3 dientes de ajo", "jugo de limón", "sal", "perejil"],
+      "preparacion": "Marina el pescado con ajo, sal y limón. Cocina en sartén. Espolvorea perejil al servir.",
+      "videoId": "BQ5ax8im3Ow"
+    },
+    {
+      "nombre": "Ensalada de pollo con vegetales",
+      "ingredientes": ["pechuga cocida", "lechuga", "tomate", "pepino", "maíz", "aderezo"],
+      "preparacion": "Corta los ingredientes y mézclalos. Añade aderezo al gusto.",
+      "videoId": "dNJdJIwCF_Y"
+    },
+    {
+      "nombre": "Lentejas con arroz",
+      "ingredientes": ["1 taza de lentejas", "1 taza de arroz", "cebolla", "ajo", "zanahoria", "comino"],
+      "preparacion": "Cocina lentejas con condimentos. Aparte, cocina el arroz. Sirve juntos o mezclados.",
+      "videoId": "Ks-_Mh1QhMc"
+    }
+  ],
+  "Cenas": [
+    {
+      "nombre": "Omelette de vegetales",
+      "ingredientes": ["2 huevos", "cebolla", "pimentón", "tomate", "espinaca", "sal y pimienta"],
+      "preparacion": "Bate huevos, agrega vegetales. Cocina como tortilla y dobla.",
+      "videoId": "qBU70EFGv7Y"
+    },
+    {
+      "nombre": "Sopa de pollo",
+      "ingredientes": ["pollo con hueso", "papa", "zanahoria", "apio", "cebolla", "ajo", "sal"],
+      "preparacion": "Cocina el pollo con vegetales en agua con sal por una hora. Sirve caliente.",
+      "videoId": "2AdrmfjAhn0"
+    },
+    {
+      "nombre": "Wraps de pollo",
+      "ingredientes": ["tortillas de harina", "pollo cocido desmenuzado", "lechuga", "tomate", "aderezo"],
+      "preparacion": "Arma los wraps y enrolla.",
+      "videoId": "TSFgDZJVYbo"
+    },
+    {
+      "nombre": "Hamburguesa casera",
+      "ingredientes": ["carne molida", "pan de hamburguesa", "lechuga", "tomate", "cebolla", "queso"],
+      "preparacion": "Forma y cocina la carne. Arma la hamburguesa con los demás ingredientes.",
+      "videoId": "iM_KMYulI_s"
+    },
+    {
+      "nombre": "Puré de papa con huevo",
+      "ingredientes": ["papas", "leche", "mantequilla", "sal", "huevo duro"],
+      "preparacion": "Cocina papas y haz puré con mantequilla y leche. Sirve con huevo duro.",
+      "videoId": "56WBK4ZK_cw"
+    }
+  ],
+  "Postres": [
+    {
+      "nombre": "Arroz con leche",
+      "ingredientes": ["1 taza de arroz", "1 litro de leche", "1 taza de azúcar", "canela en rama"],
+      "preparacion": "Cocina arroz, luego añade leche, azúcar y canela. Cocina hasta espesar.",
+      "videoId": "PRh2muKbyUk"
+    },
+    {
+      "nombre": "Gelatina con frutas",
+      "ingredientes": ["1 caja de gelatina", "frutas picadas"],
+      "preparacion": "Prepara la gelatina, añade las frutas y refrigera.",
+      "videoId": "oHg5SJYRHA0"
+    },
+    {
+      "nombre": "Pudín de pan",
+      "ingredientes": ["pan duro", "leche", "azúcar", "huevos", "vainilla"],
+      "preparacion": "Mezcla todo y hornea por 45 minutos a 180°C.",
+      "videoId": "y6120QOlsfU"
+    },
+    {
+      "nombre": "Flan casero",
+      "ingredientes": ["1 lata de leche condensada", "1 taza de leche", "3 huevos", "caramelo"],
+      "preparacion": "Mezcla todo y hornea en baño maría por 50 minutos.",
+      "videoId": "dQw4w9WgXcQ"
+    },
+    {
+      "nombre": "Brownies",
+      "ingredientes": ["100g chocolate", "100g mantequilla", "2 huevos", "1 taza de azúcar", "1/2 taza de harina"],
+      "preparacion": "Derrite chocolate y mantequilla. Agrega huevos, azúcar y harina. Hornea 25 min a 180°C.",
+      "videoId": "U4C1Q-_jFx4"
+    }
+  ],
+  "Snacks o meriendas": [
+    {
+      "nombre": "Sandwich de jamón y queso",
+      "ingredientes": ["pan", "jamón", "queso", "mantequilla"],
+      "preparacion": "Arma el sandwich y tuéstalo en sartén.",
+      "videoId": "eGQEAiZJMco"
+    },
+    {
+      "nombre": "Palitos de zanahoria con hummus",
+      "ingredientes": ["zanahoria", "hummus"],
+      "preparacion": "Corta la zanahoria en bastones y sirve con hummus.",
+      "videoId": "BwkdGr_riLQ"
+    },
+    {
+      "nombre": "Yogur con granola y frutas",
+      "ingredientes": ["yogur natural", "granola", "frutas"],
+      "preparacion": "Sirve en capas en un vaso.",
+      "videoId": "sTJ7AzBIJoI"
+    },
+    {
+      "nombre": "Chips de plátano",
+      "ingredientes": ["plátanos verdes", "aceite", "sal"],
+      "preparacion": "Corta finamente los plátanos y fríe. Escurre y añade sal.",
+      "videoId": "6JVQbOoiuVs"
+    },
+    {
+      "nombre": "Quesadillas de queso",
+      "ingredientes": ["tortilla de harina", "queso rallado"],
+      "preparacion": "Rellena la tortilla con queso, dóblala y caliéntala en sartén.",
+      "videoId": "kJQP7kiw5Fk"
+    }
+  ]
+}

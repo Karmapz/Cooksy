@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecetApp - Tu libro de cocina digital</title>
+    <meta name="description" content="Descubre deliciosas recetas organizadas por categorías con videos instructivos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Cargando deliciosas recetas...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>🍳 Cooksy</h1>
+            </div>
+            <div class="header-controls">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Buscar recetas o ingredientes..." aria-label="Buscar recetas">
+                    <button id="search-btn" aria-label="Buscar">🔍</button>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button id="suggest-recipe-btn" class="suggest-btn" aria-label="Sugerir receta">
+                    ➕ Sugerir Receta
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" role="navigation" aria-label="Categorías de recetas">
+            <div class="sidebar-header">
+                <h2>Categorías</h2>
+                <button id="sidebar-toggle" class="sidebar-toggle-btn" aria-label="Colapsar menú">
+                    <span>←</span>
+                </button>
+            </div>
+            <ul class="category-list">
+                <li>
+                    <button class="category-btn active" data-category="Todas" aria-label="Ver todas las recetas">
+                        <span class="category-icon">🍽️</span>
+                        <span class="category-name">Todas las recetas</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn" data-category="Desayunos" aria-label="Ver desayunos">
+                        <span class="category-icon">🍳</span>
+                        <span class="category-name">Desayunos</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn" data-category="Almuerzos" aria-label="Ver almuerzos">
+                        <span class="category-icon">🍝</span>
+                        <span class="category-name">Almuerzos</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn" data-category="Cenas" aria-label="Ver cenas">
+                        <span class="category-icon">🌙</span>
+                        <span class="category-name">Cenas</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn" data-category="Postres" aria-label="Ver postres">
+                        <span class="category-icon">🍰</span>
+                        <span class="category-name">Postres</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn" data-category="Snacks o meriendas" aria-label="Ver snacks">
+                        <span class="category-icon">🥨</span>
+                        <span class="category-name">Snacks</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content" role="main">
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h2 id="category-title">Desayunos</h2>
+                    <p id="category-description">Comienza tu día con energía</p>
+                </div>
+            </section>
+
+            <section class="filters-section">
+                <div class="filters-container">
+                    <div class="filter-group">
+                        <label for="ingredient-filter">Filtrar por ingrediente:</label>
+                        <select id="ingredient-filter" aria-label="Filtrar por ingrediente">
+                            <option value="">Todos los ingredientes</option>
+                        </select>
+                    </div>
+                    <div class="results-count">
+                        <span id="results-count">0 recetas encontradas</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recipes-section">
+                <div id="recipes-container" class="recipes-grid" role="region" aria-label="Lista de recetas">
+                    <!-- Recipes will be loaded here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Recipe Modal -->
+    <div id="recipe-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title"></h3>
+                <button id="close-modal" class="close-btn" aria-label="Cerrar modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="recipe-details">
+                    <div class="recipe-info">
+                        <div class="ingredients-section">
+                            <h4>Ingredientes</h4>
+                            <ul id="modal-ingredients"></ul>
+                        </div>
+                        <div class="preparation-section">
+                            <h4>Preparación</h4>
+                            <p id="modal-preparation"></p>
+                        </div>
+                    </div>
+                    <div class="video-section">
+                        <div id="modal-video-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal video-modal" role="dialog" aria-labelledby="video-modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="video-modal-title">Video Tutorial</h3>
+                <button id="close-video-modal" class="close-btn" aria-label="Cerrar video">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="video-modal-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Suggest Recipe Modal -->
+    <div id="suggest-modal" class="modal" role="dialog" aria-labelledby="suggest-modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="suggest-modal-title">Sugerir Nueva Receta</h3>
+                <button id="close-suggest-modal" class="close-btn" aria-label="Cerrar formulario">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="suggest-form" class="suggest-form">
+                    <div class="form-group">
+                        <label for="recipe-name">Nombre de la receta *</label>
+                        <input type="text" id="recipe-name" name="recipeName" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="recipe-category">Categoría *</label>
+                        <select id="recipe-category" name="category" required aria-required="true">
+                            <option value="">Selecciona una categoría</option>
+                            <option value="Desayunos">Desayunos</option>
+                            <option value="Almuerzos">Almuerzos</option>
+                            <option value="Cenas">Cenas</option>
+                            <option value="Postres">Postres</option>
+                            <option value="Snacks o meriendas">Snacks o meriendas</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="recipe-ingredients">Ingredientes (uno por línea) *</label>
+                        <textarea id="recipe-ingredients" name="ingredients" rows="5" required aria-required="true" placeholder="Ejemplo:&#10;2 huevos&#10;1 taza de harina&#10;1/2 taza de leche"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="recipe-preparation">Preparación *</label>
+                        <textarea id="recipe-preparation" name="preparation" rows="4" required aria-required="true" placeholder="Describe los pasos de preparación..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="recipe-video">URL del video de YouTube (opcional)</label>
+                        <input type="url" id="recipe-video" name="videoUrl" placeholder="https://www.youtube.com/watch?v=...">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="user-name">Tu nombre (opcional)</label>
+                        <input type="text" id="user-name" name="userName" placeholder="¿Cómo te llamas?">
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" id="cancel-suggest" class="btn-secondary">Cancelar</button>
+                        <button type="submit" class="btn-primary">Enviar Sugerencia</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <footer></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
